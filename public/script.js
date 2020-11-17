@@ -64,16 +64,16 @@ $(document).ready(function() {
 		var duration = 400;
 		jQuery(window).on('scroll', function() {
 			if (jQuery(this).scrollTop() > offset) {
-				jQuery('.scroll-to-top').addClass('active-arrow');
-			} else {
 				jQuery('.scroll-to-top').removeClass('active-arrow');
+			} else {
+				jQuery('.scroll-to-top').addClass('active-arrow');
 			}
 		});				
 		jQuery('.scroll-to-top').on('click', function(event) {
 			event.preventDefault();
-			jQuery('html, body').animate({scrollTop: 0}, duration);
+			jQuery('html, body').animate({scrollTop: window.innerHeight}, duration);
 			return false;
-		})
+		})	
   
   		
 		/* Hero Case study images */			
