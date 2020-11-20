@@ -6,33 +6,65 @@
 	function scrollBanner() {
 	  $(document).on('scroll', function(){
 
-		
-		var scrollPos = $(this).scrollTop();
+		const scrollPos = $(this).scrollTop();
+
+		if (scrollPos < 1700) {
+
+			$('.app').children('.detail').each(function (index) {
+
+				let distance = (scrollPos/($(this).offset().top - 300) * 10)
+	
+	
+				if ($(this).attr("class").split(/\s+/).includes('detail-even')) {
+	
+	
+					if (distance < 7){
+						$( this ).css({
+			
+							'opacity' : (scrollPos/($(this).offset().top - 300)),
+							'right' : `-${(scrollPos/($(this).offset().top - 100)) * 10}%` 
+			
+						})
+					}else {
+						$( this ).css({
+			
+							'opacity' : (scrollPos/($(this).offset().top - 300))
+			
+						})
+					}
+	
+				} else {
+	
+
+					if (distance < 7){
+						$( this ).css({
+			
+							'opacity' : (scrollPos/($(this).offset().top - 300)),
+							'left' : `-${(scrollPos/($(this).offset().top - 100)) * 10}%` 
+			
+						})
+					}else {
+						$( this ).css({
+			
+							'opacity' : (scrollPos/($(this).offset().top - 300))
+			
+						})
+					}
+	
+				}
+	
+			});
 
 
-
-
-
-
-		$('.app').children('.detail').each(function (index) {
-
-
-
-			$( this ).css({
-		
-				'opacity' : (scrollPos/($(this).offset().top - 300))
-
+			$('.dummy').css({
+				'opacity': ((scrollPos/1000))
 			})
 
-		});
 
 
+		}
 
-			// $( ".app div:nth-child(1)" ).css({
-		
-			// 	'opacity' : (scrollPos/$(".app div:nth-child(1)").offset().top)
 
-			// })
 
 			$('.parallax-fade-top').css({
 			'top' : (scrollPos/2)+'px',
@@ -40,11 +72,15 @@
 			});
 
 			$('.parallax-00').css({
-			'top' : (scrollPos/-3.5)+'px'
+			'top' : (scrollPos/-3.5)+'px',
+
+
 			});
 
 			$('.parallax-01').css({
-			'top' : (scrollPos/-2.8)+'px'
+			'top' : (scrollPos/-2.8)+'px',
+			// 'opacity' : (scrollPos/($(this).offset().top - 300)),
+
 			});
 
 			$('.parallax-top-shadow').css({
@@ -53,13 +89,10 @@
 			});
 
 		});    
-	  }
+	}
 	scrollBanner();	              
 
 
-	
-  
-//Scroll back to top
               
 $(document).ready(function() {	
 
