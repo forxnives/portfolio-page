@@ -48,6 +48,17 @@
    background-position: center;
    background-size: cover;
    z-index: 2;
+
+ }
+
+ .dummy {
+
+  // background: #000;
+
+  // width: 100%;
+  // height: 100vh;
+  // z-index: 4000;
+
  }
  .section {
    position: relative;
@@ -279,12 +290,12 @@ Detail
 
   &-odd {
     padding: 37px 30px 30px 255px;
-    margin-right: 10vw;
+    // margin-right: 10vw;
   }
 
   &-even {
     padding: 37px 255px 30px 30px;
-    margin-left: 10vw;
+    // margin-left: 10vw;
 
   }
 
@@ -332,7 +343,7 @@ Detail
       position: absolute;
       z-index: 2;
       top: 15%;
-      left: -6%;
+      // left: -6%;
       height: 100%;
       border-radius: 5px;
       box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
@@ -342,14 +353,11 @@ Detail
       position: absolute;
       z-index: 2;
       top: 15%;
-      right: -6%;
+      // right: -6%;
       height: 100%;
       border-radius: 5px;
       box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
     }
-
-
-
 
     //opacity: 0;
     // transition: all .5s cubic-bezier(.67,.13,.1,.81);
@@ -414,6 +422,8 @@ Detail
   }
 }
 
+
+
 .detail.ready {
   
 
@@ -457,22 +467,6 @@ Detail
     transition-delay: .5s;
   }
 }
-
-
-// .the-most {
-//   position: fixed;
-//   z-index: 1;
-//   bottom: 0;
-//   left: 0;
-//   width: 50vw;
-//   max-width: 200px;
-//   padding: 10px;
-  
-//   img {
-//     max-width: 100%;
-//   }
-// }
-
 
 
 .devicon-container {
