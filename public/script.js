@@ -1,9 +1,3 @@
-// import $ from 'jquery';
-
-
-// console.log('working?')
-/* Please ❤ this if you like it! */
-
 
 (function($) { "use strict";
  
@@ -11,55 +5,65 @@
               
 	function scrollBanner() {
 	  $(document).on('scroll', function(){
-      var scrollPos = $(this).scrollTop();
-        $('.parallax-fade-top').css({
-          'top' : (scrollPos/2)+'px',
-          'opacity' : 1-(scrollPos/700)
-        });
-        $('.parallax-00').css({
-          'top' : (scrollPos/-3.5)+'px'
-        });
-        $('.parallax-01').css({
-          'top' : (scrollPos/-2.8)+'px'
-        });
-        $('.parallax-top-shadow').css({
-          'top' : (scrollPos/-2)+'px'
-        });
-      });    
+
+		
+		var scrollPos = $(this).scrollTop();
+
+
+
+
+
+
+		$('.app').children('.detail').each(function (index) {
+
+
+
+			$( this ).css({
+		
+				'opacity' : (scrollPos/($(this).offset().top - 300))
+
+			})
+
+		});
+
+
+
+			// $( ".app div:nth-child(1)" ).css({
+		
+			// 	'opacity' : (scrollPos/$(".app div:nth-child(1)").offset().top)
+
+			// })
+
+			$('.parallax-fade-top').css({
+			'top' : (scrollPos/2)+'px',
+			'opacity' : 1-(scrollPos/700)
+			});
+
+			$('.parallax-00').css({
+			'top' : (scrollPos/-3.5)+'px'
+			});
+
+			$('.parallax-01').css({
+			'top' : (scrollPos/-2.8)+'px'
+			});
+
+			$('.parallax-top-shadow').css({
+			'top' : `${1 - (scrollPos/-5) }px`,
+			'opacity': `${1 - (scrollPos/800)}`
+			});
+
+		});    
 	  }
 	scrollBanner();	              
 
-	//Page cursors
 
-    // document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
-    //     t.style.left = n.clientX + "px", 
-	// 	t.style.top = n.clientY + "px", 
-	// 	e.style.left = n.clientX + "px", 
-	// 	e.style.top = n.clientY + "px", 
-	// 	i.style.left = n.clientX + "px", 
-	// 	i.style.top = n.clientY + "px"
-    // });
-    // var t = document.getElementById("cursor"),
-    //     e = document.getElementById("cursor2"),
-    //     i = document.getElementById("cursor3");
-    // function n(t) {
-    //     e.classList.add("hover"), i.classList.add("hover")
-    // }
-    // function s(t) {
-    //     e.classList.remove("hover"), i.classList.remove("hover")
-    // }
-    // s();
-    // for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
-    //     o(r[a])
-    // }
-    // function o(t) {
-    //     t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
-    // }              
-              
+	
   
 //Scroll back to top
               
 $(document).ready(function() {	
+
+
 		var offset = 300;
 		var duration = 400;
 		jQuery(window).on('scroll', function() {
@@ -75,35 +79,93 @@ $(document).ready(function() {
 			return false;
 		})	
   
-  		
-		/* Hero Case study images */			
-		
-		$('.case-study-name:nth-child(1)').on('mouseenter', function() {
-			$('.case-study-name.active').removeClass('active');
-			$('.case-study-images li.show').removeClass("show");
-			$('.case-study-images li:nth-child(1)').addClass("show");
-			$('.case-study-name:nth-child(1)').addClass('active');
-		})
-		$('.case-study-name:nth-child(2)').on('mouseenter', function() {
-			$('.case-study-name.active').removeClass('active');
-			$('.case-study-images li.show').removeClass("show");
-			$('.case-study-images li:nth-child(2)').addClass("show");
-			$('.case-study-name:nth-child(2)').addClass('active');
-		})
-		$('.case-study-name:nth-child(3)').on('mouseenter', function() {
-			$('.case-study-name.active').removeClass('active');
-			$('.case-study-images li.show').removeClass("show");
-			$('.case-study-images li:nth-child(3)').addClass("show");
-			$('.case-study-name:nth-child(3)').addClass('active');
-		})
-		$('.case-study-name:nth-child(4)').on('mouseenter', function() {
-			$('.case-study-name.active').removeClass('active');
-			$('.case-study-images li.show').removeClass("show");
-			$('.case-study-images li:nth-child(4)').addClass("show");
-			$('.case-study-name:nth-child(4)').addClass('active');
-		})
-		$('.case-study-name:nth-child(1)').trigger('mouseenter')
+
   
   });            
               
 })(jQuery); 
+
+
+
+
+// var $play = $('.play'),
+//     $detail  = $('.detail'),
+//     $movie = $('.movie', $detail),
+//     $close = $('.close');
+
+// $('.movies .movie').click(function(){
+//   $movie.html($(this).html());
+//   $play.appendTo($movie);
+
+//   $poster = $('.poster', this).addClass('active');
+
+//   $('.poster', $detail).css({
+//     top: $poster.position().top,
+//     left: $poster.position().left,
+//     width: $poster.width(),
+//     height: $poster.height()
+//   }).data({
+//     top: $poster.position().top,
+//     left: $poster.position().left,
+//     width: $poster.width(),
+//     height: $poster.height()
+//   })
+
+//   $detail.show();
+
+//   $('.poster', $detail).delay(10).queue(function(next) {
+//     $detail.addClass('ready');
+
+//     next();
+//   }).delay(100).queue(function(next){
+//     $(this).css({
+//       top: '10%',
+//       left: '-6%',
+//       width: 266,
+//       height: 400
+//     });
+//     next();
+//   })
+// })
+
+
+/*--------------------
+Close
+--------------------*/
+// function close(){
+//   console.log('asd');
+//   $p = $('.detail .poster');
+//   console.log($p)
+//   $p.css({
+//     top: $p.data('top'),
+//     left: $p.data('left'),
+//     width: $p.data('width'),
+//     height: $p.data('height'),
+//   })
+//   $detail.removeClass('ready').delay(500).queue(function(next){
+//     $(this).hide();
+//     $poster.removeClass('active');
+//     next();
+//   });
+// }
+
+// $close.click(close);
+// $('body').click(function(e){
+//   $p = $(e.target).parents();
+//   if ($p.is('.app')){
+//     return false;
+//   } else {
+//     close();
+//   }
+// })
+
+
+/*--------------------
+CodePen Thumbnail
+--------------------*/
+// setTimeout(function(){
+//   $('.movie:eq(0)').click();
+// }, 300);
+// setTimeout(function(){
+//   close();
+// },1700);
