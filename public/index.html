@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     
@@ -27,6 +27,64 @@
   </div>
 
 
+
+
+
+
+
+  <nav role="navigation">
+    <div id="menuToggle">
+
+
+      <div id='menu-container'> 
+
+
+
+
+      <div id='hamburger'>
+
+        <input class='nav-checkbox' type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <a href="#"><li><img class='logo-img-responsive' src='https://www.logolynx.com/images/logolynx/96/965cfc648b6fe708862af8bb1d320a18.png' /></li></a>
+        <a href="#"><li>Projects</li></a>
+        <a href="#"><li>About Me</li></a>
+        <a href="#"><li>Contact</li></a>
+        
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div class='star-overlay'>
 
 
@@ -39,7 +97,7 @@
   <div class="section-parallax parallax-00" ></div>
   <div class="section-parallax parallax-01" style="background-image: url('http://www.ivang-design.com/svg-load/parallax/parallax-01.png');">
   
-  <div class="dummy" style='height: 80vh; background-color: #1F2029; opacity: 0'>
+  <div class="dummy" style='height: 80vh; z-index: -1; background-color: #1F2029; opacity: 0'>
 
   </div>
   </div>
@@ -61,13 +119,17 @@
 
 
 <div class="home-content">
-  <div class="row home-content__main">
-    <h3>Hello,</h3>
+  <h3>Hello,</h3>
+  <div class="home-content__main">
 
-    <h1>
-      I'm Marc Robotham <br>
-      I'm a Web Developer <br>
-    </h1>
+
+    <span class='h1-span'>
+      <h1>
+        I'm Marc Robotham <br>
+        I'm a Developer <br>
+      </h1>
+
+    </span>
 
     <div class="home-content__buttons">
       <a href="#works" class="smoothscroll btn btn--stroke">
@@ -101,206 +163,205 @@
 
 <div class="section z-bigger">
 
-  <div class="app">
-
-    <!-- <section class="movies">
-      <div class="movie">
-        <div class="title">Room</div>
-        <img src="https://github.com/supahfunk/supah-codepen/blob/master/movie-room.jpg?raw=true" alt="" class="poster" />
-
-        <div class="desc">
-          Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
-        </div>
-      </div>
-      <div class="movie">
-        <div class="title">Whiplash</div>
-        <img src="https://github.com/supahfunk/supah-codepen/blob/master/movie-whiplash.jpg?raw=true" alt="" class="poster" />
-
-        <div class="desc">
-          Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.
-        </div>
-      </div>
-      <div class="movie">
-        <div class="title">Mad Max</div>
-        <img src="https://github.com/supahfunk/supah-codepen/blob/master/movie-madmax.jpg?raw=true" alt="" class="poster" />
-
-        <div class="desc">
-          An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and most everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order. There's Max, a man of action and a man of few words, who seeks peace of mind following the loss of his wife and child in the aftermath of the chaos.
-        </div>
-      </div>
-      <div class="movie">
-        <div class="title">The Revenant</div>
-        <img src="https://github.com/supahfunk/supah-codepen/blob/master/movie-therevenant.jpg?raw=true" alt="" class="poster" />
-
-        <div class="desc">
-          In the 1820s, a frontiersman, Hugh Glass, sets out on a path of vengeance against those who left him for dead after a bear mauling.
-        </div>
-      </div>
-    </section> -->
+  <div class="projects-container">
 
 
+    <div class="project parascroll">
 
+      <div class="ting project-even">
+        
 
+        <div class='even-card-left'>
 
-    <div class="detail detail-even ready">
+          <div class="title">Soundthesia DJ App</div>
+          
 
-      <div class="project-even">
+          <div class="info">
+            <span class="technologies">Vanilla Javascript | SASS/SCSS | Web Audio API </span>
 
+          </div>
+          <div class="desc">
+            Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+          </div>
 
-        <div class="title">Soundthesia DJ App</div>
-        <img src="https://github.com/supahfunk/supah-codepen/blob/master/movie-room.jpg?raw=true" alt="" class="poster-even" />
+          <div class='project-buttons'> 
+            <button class="button">
+              Live
+            </button>
+      
+            <button class="button">
+                Code
+            </button>
 
-        <div class="info">
-          <span class="technologies">Vanilla Javascript | SASS/SCSS | Web Audio API </span>
-          <!-- <span class="year">2015</span> -->
-        </div>
-        <div class="desc">
-          Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+            <button class="button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
+                <g id="Play">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
+                </g>
+              </svg> demo video
+            </button>
+          </div>
+
         </div>
 
-
-        <button class="button">
-          Live
-       </button>
- 
-       <button class="button">
-          Code
-       </button>
-
-
+        <div class='even-card-right'>
+          <img src="../img/soundthesiascreen.png" alt="" class="poster-even" />
+        </div>
   
-        <button class="button">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
-            <g id="Play">
-              <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
-            </g>
-          </svg> demo video
-        </button>
-  
-
+        
       </div>
-
 
     </div>
 
 
-
-
-
-    <div class="detail detail-odd ready">
+    <div class="project parascroll">
 
       <div class="project-odd">
 
 
-        <div class="title">Caribbean Hut E-Store</div>
-        <img src="https://github.com/supahfunk/supah-codepen/blob/master/movie-room.jpg?raw=true" alt="" class="poster-odd" />
-
-        <div class="info">
-          <span class="technologies">React | Redux | SASS/SCSS | Firebase | Stripe </span>
-          <!-- <span class="year">2015</span> -->
-        </div>
-        <div class="desc">
-          Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+        <div class='odd-card-left'>
+          <img src="../img/jetsyscreen.png" alt="" class="poster-odd" />
         </div>
 
-        <button class="button">
-           Live
-        </button>
-  
-        <button class="button">
-           Code
-        </button>
-  
+        <div class='odd-card-right'>
 
-        <button class="button">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
-            <g id="Play">
-              <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
-            </g>
-          </svg> demo video
-        </button>
-  
-  
+          <div class="title">Caribbean Hut E-Store</div>
+          
+
+          <div class="info">
+            <span class="technologies">Vanilla Javascript | SASS/SCSS | Web Audio API </span>
+
+          </div>
+          <div class="desc">
+            Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+          </div>
+
+          <div class='project-buttons'> 
+            <button class="button">
+              Live
+            </button>
+      
+            <button class="button">
+                Code
+            </button>
+
+            <button class="button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
+                <g id="Play">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
+                </g>
+              </svg> demo video
+            </button>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
 
 
-    <div class="detail detail-even ready">
+    <div class="project parascroll">
 
       <div class="project-even">
 
-        <div class="title">Tiff 2020 Releases</div>
-        <img src="https://github.com/supahfunk/supah-codepen/blob/master/movie-room.jpg?raw=true" alt="" class="poster-even" />
 
-        <div class="info">
-          <span class="technologies">React | SASS/SCSS</span>
-          <!-- <span class="year">2015</span> -->
+        <div class='even-card-left'>
+
+          <div class="title">Soundthesia DJ App</div>
+          
+
+          <div class="info">
+            <span class="technologies">Vanilla Javascript | SASS/SCSS | Web Audio API </span>
+
+          </div>
+          <div class="desc">
+            Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+          </div>
+
+          <div class='project-buttons'> 
+            <button class="button">
+              Live
+            </button>
+      
+            <button class="button">
+                Code
+            </button>
+
+            <button class="button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
+                <g id="Play">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
+                </g>
+              </svg> demo video
+            </button>
+          </div>
+
         </div>
-        <div class="desc">
-          Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+
+        <div class='even-card-right'>
+          <img src="../img/jetsyscreen.png" alt="" class="poster-even" />
         </div>
   
-        <button class="button">
-          Live
-       </button>
- 
-       <button class="button">
-          Code
-       </button>
-
-        <button class="button">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
-            <g id="Play">
-              <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
-            </g>
-          </svg> demo video
-        </button>
-
+        
       </div>
 
     </div>
 
 
-
-
-    <div class="detail detail-odd ready">
+    <div class="project parascroll">
 
       <div class="project-odd">
 
 
-        <div class="title">Caribbean Hut E-Store</div>
-        <img src="https://github.com/supahfunk/supah-codepen/blob/master/movie-room.jpg?raw=true" alt="" class="poster-odd" />
-
-        <div class="info">
-          <span class="technologies">React | Redux | SASS/SCSS | Firebase | Stripe </span>
-          <!-- <span class="year">2015</span> -->
-        </div>
-        <div class="desc">
-          Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+        <div class='odd-card-left'>
+          <img src="../img/jetsyscreen.png" alt="" class="poster-odd" />
         </div>
 
-        <button class="button">
-           Live
-        </button>
-  
-        <button class="button">
-           Code
-        </button>
-  
+        <div class='odd-card-right'>
 
-        <button class="button">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
-            <g id="Play">
-              <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
-            </g>
-          </svg> demo video
-        </button>
-  
-  
+          <div class="title">Caribbean Hut E-Store</div>
+          
+
+          <div class="info">
+            <span class="technologies">Vanilla Javascript | SASS/SCSS | Web Audio API </span>
+
+          </div>
+          <div class="desc">
+            Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+          </div>
+
+          <div class='project-buttons'> 
+            <button class="button">
+              Live
+            </button>
+      
+            <button class="button">
+                Code
+            </button>
+
+            <button class="button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
+                <g id="Play">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
+                </g>
+              </svg> demo video
+            </button>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
+
+
+
+
+
+
+
+
 
 
 
