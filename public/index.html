@@ -595,32 +595,32 @@
 
         <p>Have an inquiry? </p>
         <form name='contact' method='POST' data-netlify="true">
-        <div class="column">
-          <div class="text-field-name-1">
+          <div class="column">
+            <label class="text-field-name-1">
 
-                <input type="text" class="text" value=" Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Name';}">
+                  <input type="text" class="text" value=" Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Name';}">
+
+            </label>
+            <label class="text-field-email-1">
+
+                  <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+
+            </label>
 
           </div>
-          <div class="text-field-email-1">
+          <div class="column">
+              <label class="text-field-area-">
 
-                <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+                  <textarea value="Message:" onfocus="if(this.value == 'Message') this.value='';" onblur="if(this.value == '') this.value='Message';">Message</textarea>
 
+              </label>
+              <div class="button">
+
+                  <button type="submit" value="Send"> Sned </button>
+
+              </div>
           </div>
-
-        </div>
-        <div class="column">
-            <div class="text-field-area-">
-
-                <textarea value="Message:" onfocus="if(this.value == 'Message') this.value='';" onblur="if(this.value == '') this.value='Message';">Message</textarea>
-
-            </div>
-            <div class="button">
-
-                <input type="submit" value="Send">
-
-            </div>
-        </div>
-        <div class="clearfix"> </div>
+          <div class="clearfix"> </div>
         </form>
       </div>
     </div>
