@@ -30,7 +30,7 @@
 		  close: '<div class=" ' + this.Class.close + ' ">Close X</div>',
 		  overlay: '<div class=" ' + this.Class.overlay + ' "></div>',
 		  box: '<div class=" ' + this.Class.box + ' "></div>'
-		}
+		};
 	
 		this.youtubeID = false;
 	
@@ -171,7 +171,7 @@
 					if ($(window).innerWidth() >= 1350) {
 
 
-						let distance = (scrollPos/($(this).offset().top - 300) * 10)
+						let distance = (scrollPos/($(this).offset().top - 300) * 10);
 
 
 
@@ -334,23 +334,44 @@ $(document).ready(function() {
 
 			if (jQuery('.letstalk').offset()['top'] < jQuery(this).scrollTop() + 600 
 
-			// jQuery('.letstalk').offset()['top'] + 300 < jQuery(this).scrollTop()
-			// jQuery(this).scrollTop() <
 			){
 				
 
 				
-				jQuery('.project-link-wrap p').last().css({
+				jQuery('.letstalk p').last().css({
 					opacity: .9
 				})
 
 
 
 			} else {
-				jQuery('.project-link-wrap p').last().css({
+				jQuery('.letstalk p').last().css({
 					opacity: .15
 				})
 			}
+
+
+			if (jQuery('.aboutme').offset()['top'] < jQuery(this).scrollTop() + 600 
+
+			){
+				
+
+				
+				jQuery('.aboutme p').last().css({
+					opacity: .15
+				})
+
+
+
+			} else {
+				jQuery('.aboutme p').last().css({
+					opacity: .9
+				})
+			}
+
+
+
+			
 
 
 
