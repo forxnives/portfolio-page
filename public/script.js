@@ -159,7 +159,7 @@
 
 
 
-		if (scrollPos < 1700) {
+		if (scrollPos < 2150) {
 
 
 
@@ -168,7 +168,7 @@
 
 
 
-					if ($(window).innerWidth() >= 1350) {
+					if ($(window).innerWidth() >= 1530) {
 
 
 						let distance = (scrollPos/($(this).offset().top - 300) * 10);
@@ -301,7 +301,7 @@
 
 	$( window ).resize(function() {
 
-		if ($(window).innerWidth() <= 1350) {
+		if ($(window).innerWidth() <= 1530) {
 			$('.projects-container').children('.parascroll').each(function (index) {
 				$(this).css({
 					'margin-right': '3vw',
@@ -381,11 +381,63 @@ $(document).ready(function() {
 		
 		jQuery('.scroll-to-top').on('click', function(event) {
 			event.preventDefault();
-			jQuery('html, body').animate({scrollTop: window.innerHeight + 60}, duration);
+			if ($(window).innerWidth() <= 1530 && $(window).innerWidth() >= 530){
+				jQuery('html, body').animate({scrollTop: window.innerHeight - 80}, duration);
+			} else {
+				jQuery('html, body').animate({scrollTop: window.innerHeight}, duration);
+			}
+			return false;
+		})	
+
+		jQuery('.projects-link').on('click', function(event) {
+			event.preventDefault();
+
+
+			if ($(window).innerWidth() <= 1530 && $(window).innerWidth() >= 530){
+				jQuery('html, body').animate({scrollTop: window.innerHeight - 80}, duration);
+			} else {
+				jQuery('html, body').animate({scrollTop: window.innerHeight}, duration);
+			}
+
+			return false;
+		})	
+
+
+		jQuery('.about-link').on('click', function(event) {
+			event.preventDefault();
+			console.log((window.innerHeight - $("#aboutme").height() - 80 )/2)
+
+			if (window.innerHeight < $("#aboutme").height() ){
+
+				
+				jQuery('html, body').animate({scrollTop: $("#aboutme").offset().top
+			}, duration);
+			} else {
+				jQuery('html, body').animate({scrollTop: $("#aboutme").offset().top - (((window.innerHeight) - ($("#aboutme").height() + .10*window.innerHeight  ))/2)
+			}, duration);
+			}
+
+			return false;
+		})	
+
+
+
+		jQuery('.contact-link').on('click', function(event) {
+			event.preventDefault();
+
+				jQuery('html, body').animate({scrollTop: $(document).height()}, duration);
+
 			return false;
 		})	
   
 
+		jQuery('.home-link').on('click', function(event) {
+			event.preventDefault();
+
+				jQuery('html, body').animate({scrollTop: 0}, duration);
+
+			return false;
+		})	
 
 
 		$('.nav-checkbox').on('click', function () {

@@ -14,14 +14,14 @@
   <div class="hold">
     <div class="header">
       <div class="header-container">
-        <div id="logo">
+        <div id="logo" class='home-link'>
           
           <img class='logo-img' src='./img/mrlogotry.png' ></img>
         </div>
         <ul class="nav">
-          <li><a style='color: rgba(255,255,255,.9)' href="#">Projects</a></li>
-          <li><a style='color: rgba(255,255,255,.9)' href="#">About Me</a></li>
-          <li><a style='color: rgba(255,255,255,.9)' href="#">Contact</a></li>
+          <li><a class='projects-link' style='color: rgba(255,255,255,.9)' href="#projects">Projects</a></li>
+          <li><a class='about-link' style='color: rgba(255,255,255,.9)' href="#">About Me</a></li>
+          <li><a class="contact-link" style='color: rgba(255,255,255,.9)' href="#">Contact</a></li>
           
         </ul>
       </div>
@@ -51,10 +51,10 @@
       but hey, it's pure CSS magic.
       -->
       <ul id="menu">
-        <a href="#"><li><img class='logo-img-responsive' src='./img/mrlogotry.png' /></li></a>
-        <a href="#"><li>Projects</li></a>
-        <a href="#"><li>About Me</li></a>
-        <a href="#"><li>Contact</li></a>
+        <a  class='home-link' href="#"><li><img class='logo-img-responsive' src='./img/mrlogotry.png' /></li></a>
+        <a href="#" class='projects-link'><li>Projects</li></a>
+        <a class="about-link" href="#"><li>About Me</li></a>
+        <a class="contact-link" href="#"><li>Contact</li></a>
         
       </ul>
     </div>
@@ -120,10 +120,10 @@
     </span>
 
     <div class="home-content__buttons">
-      <a href="#works" class="smoothscroll btn btn--stroke">
+      <a href="#works" class="smoothscroll btn btn--stroke projects-link">
         Latest Projects
       </a>
-      <a href="#about" class="smoothscroll btn btn--stroke">
+      <a href="#about" class="smoothscroll btn btn--stroke about-link">
         More About Me
       </a>
     </div>
@@ -151,7 +151,7 @@
 
 
 
-<div class="section z-bigger">
+<div id='projects' class="section z-bigger">
 
   <div class="projects-container">
 
@@ -163,38 +163,38 @@
 
         <div class='even-card-left'>
 
-          <div class="title">Soundthesia DJ App</div>
+          <div class="title">NTD Ingredientes App</div>
           
 
           <div class="info">
-            <span class="technologies">Vanilla Javascript | SASS/SCSS | Web Audio API </span>
+            <span class="technologies">React | Express | Node.js | MongoDB | AdminBro | Material UI | Responsive</span>
 
           </div>
           <div class="desc">
-            Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+            While working as an accountant at a food supplier, we often encountered the problem of not being able to accept orders due to delays in sales/accounting processes.  I sought to solve this problem by digitizing and automating these processes and increasing transparency with headquarters.  The app has a customer-facing front-end that allows customers to make orders and track their invoices.  It also has an admin-facing front end that allows admins to respond to orders, create invoices, upload documents, group invoices into deposits and export excel files.
           </div>
 
           <div class='project-buttons'> 
-            <button class="button">
+            <a class="button" href="http://ntdapp.herokuapp.com/" target="_blank">
               Live
-            </button>
+            </a>
       
-            <button class="button">
+            <a class="button" href="https://github.com/forxnives/ntd-deploy" target="_blank">
                 Code
-            </button>
+            </a>
 
-            <a class='button' href="https://www.youtube.com/watch?v=4XpnKHJAok8" data-modal="button">                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
+            <a class='button' href="https://youtu.be/SDhN_OJzLl4" data-modal="button">                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
               <g id="Play">
                 <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
               </g>
-            </svg> demo video</a>
+            </svg> video</a>
           </a>
           </div>
 
         </div>
 
         <div class='even-card-right'>
-          <img src="./img/soundthesiascreen.png" alt="" class="poster-even" />
+          <img src="./img/ntdappscreen.png" alt="" class="poster-even" />
         </div>
   
         
@@ -209,36 +209,36 @@
 
 
         <div class='odd-card-left'>
-          <img src="./img/ntdappscreen.png" alt="" class="poster-odd" />
+          <img src="./img/soundthesiascreen.png" alt="" class="poster-odd" />
         </div>
 
         <div class='odd-card-right'>
 
-          <div class="title">NTD Ingredientes App</div>
+          <div class="title">Soundthesia DJ App</div>
           
 
           <div class="info">
-            <span class="technologies">Vanilla Javascript | SASS/SCSS | Web Audio API </span>
+            <span class="technologies">JavaScript | HTML | SASS/SCSS </span>
 
           </div>
           <div class="desc">
-            Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+            I wanted to incorporate my passion of DJing into one of my projects and create something that myself and others could have fun with.  This DJ app allows users to play and mix tracks from SoundCloud and has functional crossfader, volume, EQ and filter controls, as well as the ability to detect and adjust BPM.    I took the opportunity to deepen my knowledge of JavaScript by building it from scratch (no frameworks).  It was also an opportunity to explore a few different APIs/Libraries (Web Audio API, Waversurfer.js, bpm-detective).
           </div>
 
           <div class='project-buttons'> 
-            <button class="button">
+            <a class="button" href="https://forxnives.github.io/Soundthesia/" target="_blank">
               Live
-            </button>
+            </a>
       
-            <button class="button">
+            <a class="button" href="https://github.com/forxnives/Soundthesia" target="_blank">
                 Code
-            </button>
+            </a>
 
-            <a class='button' href="https://www.youtube.com/watch?v=4XpnKHJAok8" data-modal="button">                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
+            <a class='button' href="https://youtu.be/zohbWKQbTFE" data-modal="button">                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
               <g id="Play">
                 <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
               </g>
-            </svg> demo video</a>
+            </svg> video</a>
           </a>
           </div>
 
@@ -260,27 +260,27 @@
           
 
           <div class="info">
-            <span class="technologies">Vanilla Javascript | SASS/SCSS | Web Audio API </span>
+            <span class="technologies">React | Redux | SASS/SCSS | Firebase</span>
 
           </div>
           <div class="desc">
-            Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+            My friend had the idea of creating a business for Jamaican sellers to sell their products online.  I loved the idea and decided to build an e-commerce web app inspired by Etsy.  I tried to replicate some of their design and functionality while giving it a Caribbean spin and catering it to a niche audience.  Working on this project allowed me to delve further into React (hooks, Redux, React-router etc.) and become familiar with common e-commerce logic patterns.
           </div>
 
           <div class='project-buttons'> 
-            <button class="button">
+            <a class="button" href="https://forxnives.github.io/Jetsy/" target="_blank">
               Live
-            </button>
+            </a>
       
-            <button class="button">
+            <a class="button" href="https://github.com/forxnives/Jetsy" target="_blank">
                 Code
-            </button>
+            </a>
 
-            <a class='button' href="https://www.youtube.com/watch?v=4XpnKHJAok8" data-modal="button">                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
+            <a class='button' href="https://youtu.be/XjODtEtMFpA" data-modal="button">                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
               <g id="Play">
                 <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
               </g>
-            </svg> demo video</a>
+            </svg> video</a>
           </a>
           </div>
 
@@ -311,31 +311,31 @@
           
 
           <div class="info">
-            <span class="technologies">Vanilla Javascript | SASS/SCSS | Web Audio API </span>
+            <span class="technologies">React | SASS/SCSS | Flask (Python) | Responsive</span>
 
           </div>
           <div class="desc">
-            Jack is a young boy of 5 years old who has lived all his life in one room. He believes everything within it are the only real things in the world. But what will happen when his Ma suddenly tells him that there are other things outside of Room?
+            My interest in trading is what introduced me to coding in the first place and I wanted to build something that reflected that.  This is a web app that uses python web scraping to provide sentiment-based trading signals from the website FXSSI.  Building it helped me to hone my CSS skills (responsive design in particular), as well as learn more about combining and deploying different technologies.
           </div>
 
           <div class='project-buttons'> 
-            <button class="button">
+            <a class="button" href="https://illumesignals.herokuapp.com/" target="_blank">
               Live
-            </button>
+            </a>
       
-            <button class="button">
+            <a class="button" href="https://github.com/forxnives/Illume" target="_blank"> 
                 Code
-            </button>
+            </a>
             
               <!-- <button class="button"> -->
                 
 
-                <a class='button' href="https://www.youtube.com/watch?v=4XpnKHJAok8" data-modal="button">                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
+                <!-- <a class='button' href="https://www.youtube.com/watch?v=4XpnKHJAok8" data-modal="button">                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 232.153 232.153" style="enable-background:new 0 0 232.153 232.153;" xml:space="preserve" width="10px" height="10px">
                   <g id="Play">
                     <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M203.791,99.628L49.307,2.294c-4.567-2.719-10.238-2.266-14.521-2.266   c-17.132,0-17.056,13.227-17.056,16.578v198.94c0,2.833-0.075,16.579,17.056,16.579c4.283,0,9.955,0.451,14.521-2.267   l154.483-97.333c12.68-7.545,10.489-16.449,10.489-16.449S216.471,107.172,203.791,99.628z" fill="#FFFFFF"/>
                   </g>
                 </svg> demo video</a>
-              </a>
+              </a> -->
               <!-- </button> -->
             
           </div>
@@ -435,22 +435,20 @@
 </div>
 
 
-<div class="section padding-top-bottom  about-me  over-hide background-dark z-bigger-2">
+<div id='aboutme' class="section padding-top-bottom  about-me  over-hide background-dark z-bigger-2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-7 text-center">
-        <a href="" class="hover-target">
+        <div id='section-title' href="" class="hover-target">
           <div class="aboutme project-link-wrap">
             <p>about me</p>
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="summary-container">
         <h3 class="summary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Morbi commodo orci odio, ut bus sed. Phasellus vitae 
-          ullamcorper purus. Curabitur vel vestibulum justo.
+          I love finding creative solutions, learning new technologies and improving user experiences.
         </h3>
       </div>
 
@@ -482,35 +480,18 @@
           </h4>
 
           <p class="info-paragraph">
-            Hello everyone,my name is Marlon Simon, consectetur 
-            adipiscing elit. Etiam suscipit mi eget dui venenatis 
-            posuere. In varius nulla non elementum hendrerit. 
-            Suspendisse varius sapien odio, in gravida ipsum luctus 
-            id. Ut nisl erat, dignissim sed volutpat at, hendrerit 
-            imperdiet purus. Maecenas fringilla, augue sed vulputate 
-            ullamcorper, risus lorem facilisis massa, a varius nunc 
-            tellus sed odio.
+            Hello world, My coding journey began in 2019 when I built a trading robot using python and MQL4.  I had always been interested in trading and had developed a strategy that I knew could be automated with code.  I was slightly intimidated at first, but one 12-hour long YouTube video later, I was coding my trading system and I loving it!
           </p>
 
           <p class="info-paragraph">
-            Suspendisse fermentum lobortis elit sit amet vehicula. 
-            Etiam in dolor vitae leo euismod consequat a vitae ligula.
-            Nunc viverra enim purus, vel luctus ante tempus vel. 
-            Vivamus et metus massa. Pellentesque at nulla velit. 
-            Morbi pellentesque egestas massa in scelerisque. Vivamus
-             pharetra dolor enim, vel vulputate erat euismod sit amet.
+            I became addicted to the problem-solving aspect of coding; the feeling of finally overcoming an error and seeing something you’ve built work flawlessly.  I decided I wanted to make a career of it.  Since then, I’ve never stopped learning and have cultivated a robust web development skillset that I believe could bring value to you and/or your organization.
           </p>
 
           
-
-
-
         </div>
 
 
       </div>
-
-
 
 
     </div>	
@@ -573,15 +554,15 @@
 
 
 
-<div class="section padding-top-bottom over-hide  z-bigger-3">
+<div class="section padding-top-bottom over-hide z-bigger-2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-7 text-center">
-        <a href="" class="hover-target">
+        <div id='section-title' class="hover-target">
           <div class="letstalk project-link-wrap">
             <p>let's talk!</p>
           </div>
-        </a>
+        </div>
       </div>
     </div>
     

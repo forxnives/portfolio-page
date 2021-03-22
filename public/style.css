@@ -154,6 +154,11 @@ body {
   text-transform: uppercase;
 }
 
+#section-title {
+  text-decoration: underline;
+  text-decoration-color: #4E197F;
+}
+
 .padding-top-bottom {
   padding-top: 6vh;
   padding-bottom: 1vh;
@@ -175,7 +180,7 @@ body {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .project-link-wrap p {
@@ -185,7 +190,7 @@ body {
   font-weight: 900;
   text-align: center;
   margin: 0 auto;
-  cursor: pointer;
+  cursor: default;
   opacity: 0.15;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
@@ -487,7 +492,12 @@ Detail
 }
 
 .even-card-left, .odd-card-right {
-  padding: 50px;
+  padding: 30px 25px 30px 30px ;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 
@@ -545,20 +555,39 @@ Detail
   font-size: 35px;
   font-weight: 300;
   color: #525661;
-  margin-bottom: 5px;
+  
 }
 
 .project .info {
   font-size: 11px;
-  opacity: 0;
+  opacity: 1;
   margin-left: 2px;
+  margin-top: 5px;
+
+  letter-spacing: 1px;  
+
+  color: rgba(154,158,164, .80); 
 }
 
 .project .desc {
-  margin-top: 0px;
+  margin-top: 11px;
   font-size: 14px;
   line-height: 1.6;
+  color: #525661;
+  height: 100%;
 }
+
+.project-buttons {
+  display: flex;
+}
+
+.even-card-left .project-buttons {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+
 
 .project .button {
   background: -webkit-gradient(linear, left top, right top, from(#308EC5), to(#449DD1));
@@ -569,7 +598,8 @@ Detail
   font-size: 12px;
   line-height: 1.5;
   padding: 8px 17px;
-  margin: 30px 0 0 -2px;
+  /* margin: 30px 0 0 -2px; */
+  margin: 30px 2px 0px;
   text-transform: uppercase;
   z-index: 10;
   outline: none !important;
@@ -589,31 +619,34 @@ Detail
 
 
 
-@media (min-width: 1350px) {
+@media (min-width: 1530px) {
 
   .padding-top-bottom {
     padding-top: 10vh;
     padding-bottom: 3vh;
   }
 
+
+
   .projects-container {
     padding-bottom: 10vh;
   }
 
   .project{
-    max-width: 900px;
+    max-width: 1100px;
+    
     margin: 50px;
   }
 
   .poster-even {
     position: absolute;
-    right: -170px;
+    right: -140px;
     bottom: -70px;
   }
 
   .poster-odd {
     position: absolute;
-    left: -170px;
+    left: -140px;
     bottom: -70px;
   }
 
@@ -621,6 +654,7 @@ Detail
     align-items: left;
     flex-direction: row;
     align-self: center;
+    min-height: 324px;
     /* margin-right: 380px; */
 
   }
@@ -712,6 +746,7 @@ Detail
 }
 
 
+
 .z-bigger-3{
   z-index: 300;
 }
@@ -756,7 +791,7 @@ Detail
 
   align-items: center;
 
-
+  cursor: pointer;
   /* float: left;
   height: 40px;
   width: 170px; */
@@ -924,6 +959,7 @@ ul.nav li a {
   font-size: 2.6rem;
   color: white;
   z-index: 200;
+  cursor: default;
 
 }
 
@@ -1318,7 +1354,7 @@ ul {
 
 .summary {
   text-align: center;
-  margin: 8vh 0 4vh;
+  margin: 5vh 0 7vh;
   max-width: 70vw;
   font-size: 1.3rem;
 }
