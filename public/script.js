@@ -276,11 +276,10 @@ $(document).ready(function() {
 
 		jQuery('.about-link').on('click', function(event) {
 			event.preventDefault();
-			console.log((window.innerHeight - $("#aboutme").height() - 80 )/2)
-
+			
 			if (window.innerHeight < $("#aboutme").height() ){
 
-				jQuery('html, body').animate({scrollTop: $("#aboutme").offset().top
+				jQuery('html, body').animate({scrollTop: $("#aboutme").offset().top - 51
 			}, duration);
 			} else {
 				jQuery('html, body').animate({scrollTop: $("#aboutme").offset().top - (((window.innerHeight) - ($("#aboutme").height() + .10*window.innerHeight  ))/2)
@@ -292,7 +291,7 @@ $(document).ready(function() {
 
 		jQuery('.contact-link').on('click', function(event) {
 			event.preventDefault();
-			jQuery('html, body').animate({scrollTop: $(document).height()}, duration);
+			jQuery('html, body').animate({scrollTop: $("#contactsection").offset().top - 51}, duration);
 
 			return false;
 		})	

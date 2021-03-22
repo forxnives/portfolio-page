@@ -188,6 +188,11 @@ body {
           transform: rotate(180deg);
 }
 
+#about, #works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 *,
 *::before,
