@@ -80,7 +80,7 @@ body {
 }
 
 .parallax-00 {
-  background-image: url('http://www.ivang-design.com/svg-load/parallax/parallax-0.png');
+  background-image: url('./img/parallax-0-min.png');
 }
 
 .section {
@@ -166,7 +166,7 @@ body {
   background-position: top center;
   background-size: 10px 40px;
   cursor: pointer;
-  background-image: url("http://www.ivang-design.com/svg-load/parallax/arrow-up.png");
+  background-image: url("./img/arrow-up-min.png");
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
   -webkit-transition: all 250ms linear;
@@ -500,7 +500,7 @@ ul.nav li a {
 
 .star-overlay {
   background-image: linear-gradient(to top, rgba(31,32,41), rgba(31,32,41, .95), rgba(31,32,41, .3)),
-  url('https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  url('./img/staroverlay-min.png');
   position: absolute;
   width: 2000px;
   top: -50px;
